@@ -1,0 +1,5 @@
+tasks:
+  - init: bundle install && npm install -g heroku
+vscode:
+  extensions:
+    - vortizhe.simple-ruby-erb
