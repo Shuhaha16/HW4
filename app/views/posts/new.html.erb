@@ -2,16 +2,16 @@
 
 <%= form_with model: @post do |form| %>
   <p>
-    <%= form.label "title" %>
-    <%= form.text_field "title" %>
+    <%= form.label "title", class: "form-label" %>
+    <%= form.text_field "title", class: "form-control" %>
   </p>
   <p>
-    <%= form.label "description" %>
-    <%= form.text_field "description" %>
+    <%= form.label "description", class: "form-label" %>, 
+    <%= form.text_field "description", class: "form-control" %>
   </p>
   <p>
-    <%= form.label "posted_on" %>
-    <%= form.date_field "posted_on" %>
+    <%= form.label "posted_on", class: "form-label" %>
+    <%= form.date_field "posted_on", class: "form-control" %>
   </p>
   <p>
     <%= form.label "uploaded_image", class: "form-label" %>

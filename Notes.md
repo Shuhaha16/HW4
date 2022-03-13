@@ -9,6 +9,7 @@ heroku run rails db:migrate (Migrate databases once HEROKU is set up)
 
 TODO:
 -Layouts application has Logout buttom pre-placed
+-If statement for logout button, show 
 -lOGIN
 -User authentication
 -CSS Styling/bootstrap
