@@ -3,7 +3,7 @@
 <% if @current_user %>
 
   <h2>My Posts</h2>
-  <% for post in @place.posts.where({user_id: @curent_user.id}) %>
+  <% for post in @place.posts.where({user_id: @current_user.id}) %>
     <h3><%= post.title %></h3>
     <h4><%= post.posted_on %></h4>
     <p><%= post.description %></p>
