@@ -19,16 +19,22 @@
     <div>
       <% if @current_user %>
         <p> Logged in as: <%= @current_user.username %> </p>
-      
         <%= button_to "Logout", "/sessions/logout", method: :delete %>
       <% else %>
-      <a href="/sessions/new">Login</a> |
-      <a href="/users/new">Sign Up</a>
+      <!-- These links didn't work
+      <%= button_to "Login", "/sessions/new" %>
+      <%= button_to "Sign Up", "/users/new" %>
+      -->
+       <a href="/sessions/new">Login</a> |
+       <a href="/users/new">Sign Up</a>
     <% end %>
   </div>
 
-    <div class ="container">
+    <div class ="container-fluid">
       <%= yield %>
     </div >
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   </body>
 </html>
