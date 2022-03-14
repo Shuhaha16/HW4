@@ -9,16 +9,24 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
   </head>
 
+
+
+
   <body>
-    <div>
+     <div>
       <%= flash[:notice] %>
     </div>
     <div>
-      <a href="/">Home</a>
-<%#= button_to "Logout", "/sessions/logout", method: :delete %>
-      <a href="/sessions/new">Login</a>
-      <a href="/users/new">Signup</a>
-    </div>
+      <% if @current_user %>
+        <p> Logged in as: <%= @current_user.username %> </p>
+      
+        <%= button_to "Logout", "/sessions/logout", method: :delete %>
+      <% else %>
+      <a href="/sessions/new">Login</a> |
+      <a href="/users/new">Sign Up</a>
+    <% end %>
+  </div>
+
 
     <%= yield %>
   </body>
