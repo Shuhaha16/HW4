@@ -13,10 +13,12 @@
     <%= form.label "posted_on", class: "form-label" %>
     <%= form.date_field "posted_on", class: "form-control" %>
   </p>
+  <div class="mb-4">
   <p>
-    <%= form.label "uploaded_image", class: "form-label" %>
+      <%= form.label "uploaded_image", class: "form-label" %>
     <%= form.file_field "uploaded_image", accept: "image/png,image/jpg,image/jpeg", class: "form-control" %>
   </p>
+  </div>
   <%# %>
 <!--
   <div class="mb-3">
@@ -25,7 +27,7 @@
   </div>
   -->
   <p>
-    <%= form.submit %>
+    <%= form.submit "Post", class: "btn btn-primary" %>
   </p>
   <%= form.hidden_field "place_id" %>
   
