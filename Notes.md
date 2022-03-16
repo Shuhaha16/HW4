@@ -3,13 +3,13 @@
 [x] If statement for logout button, show 
 [x] lOGIN
 [x] User authentication
-[] CSS Styling/bootstrap
+[x] CSS Styling/bootstrap
 [x] file attachment
 [x] LAST: Setup HEROKU (https://entr451.com/deployment-with-heroku/)
-[] move new place above places and change to button
-[] Change "New post" to a button
+[x] move new place above places and change to button
+[x] Change "New post" to a button
 [x] Move "home link" to left side 
-[] logged in as and logout on same level - cannot figure this  out
+[] logged in as and logout on same level - cannot figure this out
 [] Login/signup on same level- Cannot figure this out
 
 Errors:
@@ -36,7 +36,7 @@ ASSIGNED TODO:
 [x]Install Bootstrap including both the <link> (in the <head> before any custom stylesheets) and the <script> (just before the closing </body>).
 [x]Add Bootstrap's navbar component (any version). Move the relevant links (e.g. "Home", "Login", "Signup", "Logout") into the navbar.
 [x]Wrap the <%= yield %> content in a Bootstrap .container.
-[]Using the Bootstrap button component, style the links to forms and the form submit buttons.
+[x]Using the Bootstrap button component, style the links to forms and the form submit buttons.
 [x]Use the Bootstrap grid for posts (3 posts per row on large screens, stacking on small screens). See wireframe.
 []Use the bootstrap spacing (margin or padding) as needed, but at least twice (not counting the navbar).
 (3 points) File Attachment
@@ -47,11 +47,11 @@ ASSIGNED TODO:
 [x]in both config/environments/development.rb and config/environments/production.rb, tell the application to use the :local service for uploading files (i.e. config.active_storage.service = :local)
 [x]Enable attachments in the Post model.
 [x]Add a new field to the posts form for uploading an image (form.file_field).
-[]If a post has an attached image (post.image.attached?), display the attached image (url_for(post.image)).
+[x]If a post has an attached image (post.image.attached?), display the attached image (url_for(post.image)).
 
 (2 points) Deployment with Heroku
-[]Follow the steps to connect to Heroku and deploy your app (https://entr451.com/deployment-with-heroku/)
-[]Once live, add the URL to your live heroku website in the README.md file of your app.
+[x]Follow the steps to connect to Heroku and deploy your app (https://entr451.com/deployment-with-heroku/)
+[x]Once live, add the URL to your live heroku website in the README.md file of your app.
 
 
 

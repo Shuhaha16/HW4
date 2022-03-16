@@ -5,7 +5,7 @@
   <a class="btn btn-primary" href="/posts/new?place_id=<%= @place.id %>" role="button">New Post</a>
   <div class="row">
     <% for post in @place.posts.where({user_id: @current_user.id}) %>
-      <div class="col-md-4">
+      <div class="col-md-3 offset-md-1">
         <h3 class="text-center"> <%= post.title %></h3>
         <h4 class="text-center"> <%= post.posted_on %></h4>
         <% if post.uploaded_image.attached? %>
