@@ -19,24 +19,19 @@
     </div>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <div class="navbar-header">
-        <!--
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          -->
+        <div id="navbar"class="nav navbar-nav navbar-left">
+          <a href= "/">Home</a>
+        </div>
+        <div class="nav navbar-nav navbar-center">
           <a class="navbar-brand" href="/places">Shoemaker's Places</a>
         </div>
-        <div id="navbar"class="nav navbar-nav navbar-right">
+          <ul id="navbar"class="nav navbar-nav navbar-right">
             <% if @current_user %>
               <p> Logged in as: <%= @current_user.username %> </p>
               <%= button_to "Logout", "/sessions/logout", method: :delete %>
             <% else%>
-              <a href="/sessions/new">Login</a><a href="/users/new">Sign Up</a>
-              <!-- <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li> -->
+              <a href="/sessions/new">Login</a>        
+              <a href="/users/new">Sign Up</a>
             <%end%>
           </ul>
         </div><!--/.nav-collapse -->

@@ -5,10 +5,15 @@
 [x] User authentication
 [] CSS Styling/bootstrap
 [x] file attachment
-[] LAST: Setup HEROKU (https://entr451.com/deployment-with-heroku/)
+[x] LAST: Setup HEROKU (https://entr451.com/deployment-with-heroku/)
+[] move new place above places and change to button
+[] Change "New post" to a button
+[x] Move "home link" to left side 
+[] logged in as and logout on same level - cannot figure this  out
+[] Login/signup on same level- Cannot figure this out
 
 Errors:
-{}  if post has no image, will still error
+{x}  if post has no image, will still error
 {} Login/Signup does not work as buttons
 
 Assignment link: 

@@ -2,7 +2,7 @@
 
 <% if @current_user %>
   <h2> Posts by <%= @current_user.username %></h2>
-  <p><a href="/posts/new?place_id=<%= @place.id %>">New Post</a></p>
+  <a class="btn btn-primary" href="/posts/new?place_id=<%= @place.id %>" role="button">New Post</a>
   <div class="row">
     <% for post in @place.posts.where({user_id: @current_user.id}) %>
       <div class="col-md-4">
@@ -17,8 +17,9 @@
       </div>
     <% end %>
   </div>
-  <p><a href="/posts/new?place_id=<%= @place.id %>">New Post</a></p>
-
+  <% if @place.posts.where({user_id: @current_user.id}).count > 0 %>
+    <a class="btn btn-primary" href="/posts/new?place_id=<%= @place.id %>" role="button">New Post</a>
+  <% end %>
 <% else %>
   <p>Login to add a post</p>
 <% end %>

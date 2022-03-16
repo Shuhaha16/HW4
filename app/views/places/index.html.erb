@@ -1,3 +1,9 @@
+<% if  @current_user %>
+  <a class="btn btn-primary" href="/places/new" role="button">New Place</a>
+<% else %>
+  <p> Login to see and add a new place. </p>
+<% end %>
+
 <ul>
   <% for place in @places %>
     <% if @current_user%>
@@ -11,11 +17,7 @@
 <!--TESTING:
  <p> There are <%= @places.size%> places </p>
 -->
-<% if  @current_user %>
-  <p>  <a href="/places/new">New place</a> </p>
-<% else %>
-  <p> Login to see and add a new place. </p>
-<% end %>
+
   
 
 <p>
