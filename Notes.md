@@ -32,7 +32,7 @@ ASSIGNED TODO:
 [x]Add Bootstrap's navbar component (any version). Move the relevant links (e.g. "Home", "Login", "Signup", "Logout") into the navbar.
 [x]Wrap the <%= yield %> content in a Bootstrap .container.
 []Using the Bootstrap button component, style the links to forms and the form submit buttons.
-[]Use the Bootstrap grid for posts (3 posts per row on large screens, stacking on small screens). See wireframe.
+[x]Use the Bootstrap grid for posts (3 posts per row on large screens, stacking on small screens). See wireframe.
 []Use the bootstrap spacing (margin or padding) as needed, but at least twice (not counting the navbar).
 (3 points) File Attachment
 [x]Configure the application for uploads:
